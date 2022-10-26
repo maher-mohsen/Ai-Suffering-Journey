@@ -1,0 +1,43 @@
+Soliutions without vectorization :
+1-
+		sum all manual
+			f=w[0]*x[0]+
+			  w[1]*x[1]+
+		 	  w[2]*x[2]+b
+2- Using loop
+			fw[],b(x[])=Sigma j=1,n(wjxj)+b
+				'for j in range (0,n):
+						f=f+w[j]*x[j]
+				 f+=b'
+
+
+vectorization :
+				'f=np.dot(w,x)+b'(البايثون ثعبة خالث)
+	-makes code shorter
+	-much faster (because numpy using paraller hardware)
+
+why vectorization much faster?!
+
+
+
+Without                    :                 with
+for j in range(16):        :               np.dot(w,x)
+ f=f+w[j]*x[j]             :              w[0],w[1],....w[16]
+(it happens step by step)  :						 x[0],x[1],....x[16]
+f+w[0]*x[0]                :              (paralell proceeing)
+f+w[1]*x[1]                : w[0]*x[0]+w[1]*x[1]+..w[16]*x[16]
+......
+f+w[16]*x[16]
+
+
+Gradient descent :
+	we store the derivatives of w[] in d[]
+
+without vectorization :
+		for j in range(16):
+		 w[j]=w[j]-0.1*d[j]
+
+with vectorization :
+w[]=w[]-0.1d[]
+w=w-0.1*d(much faster because paralell processing)
+	

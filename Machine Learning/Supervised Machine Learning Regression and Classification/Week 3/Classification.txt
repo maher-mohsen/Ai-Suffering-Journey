@@ -1,0 +1,7 @@
+why we dont use linear regression in classification:
+	linear regression predict any number but we can make threshold
+	to split the graph into 2 categories !!!BUT!!! the more u get 
+	the line shifting the more misclassifieing u will face
+	
+binary classification :
+	the output is 0 (negative class) or 1 (postive class)

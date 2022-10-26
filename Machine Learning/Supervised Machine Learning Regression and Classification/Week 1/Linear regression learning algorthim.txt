@@ -1,0 +1,15 @@
+Linear regression model :
+	Fw,b(x)=wx+b
+
+Functions :
+	CostFunction J(w,b)= 1/2*m*sum from 1 to m(Fw,b(xith-yith)^2)
+	GradientDescent (repeat until convergence):
+			w=w-alpha*d/dw(J(w,b))
+				d/dw(J(w,b))-> 1/m*sum from 1 to m (Fw,b(xith-yith)*xith
+			b=b-alpha*d/db(J(w,b))
+				d/db(J(w,b))-> 1/m*sum from 1 to m (Fw,b(xith-yith)
+
+
+We use squared error to have only one global minimum(convex function)
+
+"Batch" : each step of gradient descent uses all training examples

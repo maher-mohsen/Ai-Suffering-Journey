@@ -1,0 +1,48 @@
+Training set : Data used to train the model.
+input varaible : feature 'x'
+output variable : target 'y'
+total numberof training examble : m
+single training example : (x,y)
+ith training example : (x^(i),y^(i))
+predicted target : y^ (y-hat) 
+feature - Model -> y^ (estimated y)
+fucntion to estimate ouse price : fw,b(x) WX+b (the estimated stright line) 
+w,b coefficients ,weights
+[Linear regression with one variable(Univariate linear regression)]
+
+Costfunction : how good is the model doing --> J
+Squared error cost function
+J(y^) = sum from 1 to m(((y^- y)^2)----> error)*(1/2*m)
+
+-------------Simplified Roadmap-------------
+model :
+	fw,b(x)=wx+b
+parameters :
+	w,b
+cost function:
+	j(w,b)=1/2m*sum from 1 to m(fw,b(x^(i)-y^(i))^2)
+goal :
+	minimize J(w,b)
+	simplified fw(x)=wx
+	minimize j(w)
+---------------------------------
+General linear regression goal :
+	minimize J(w,b)
+
+-------------Roadmap-------------
+model :
+	fw,b(x)=wx+b
+parameters :
+	w,b
+cost function:
+	j(w,b)=1/2m*sum from 1 to m(fw,b(x^(i)-y^(i))^2)
+goal :
+	minimize J(w,b)
+	
+---------------------------------
+contour plot : slicing a 3d plot into ovals or elipses each one has consist of points has same highest
+			the bottom or the ceneter oval is the minimum cost
+
+-------------------------------------------------------------------------------------------------------
+
+				 

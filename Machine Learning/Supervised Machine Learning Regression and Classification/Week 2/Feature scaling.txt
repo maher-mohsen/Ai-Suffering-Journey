@@ -1,0 +1,17 @@
+- when a possible range of featrue is smalll the expected coff is
+	big and when the range is big the expected is small
+
+  features scalling helps to optmize gradient descent 
+	
+	to feature scaling:
+	1- divide intervals over max
+	2- Mean normalization (feature - mean/max - min) let the values
+		around zero
+	3- Z-score normalization:
+			calc standard deviation
+			calc mean
+			feature-mean/standad deviation
+			get intervals from Z-score
+			max = 3
+			min = -3
+		other min or max values u should rescaling

@@ -1,0 +1,52 @@
+Fw[],b(x[]) =w[].x[]+b
+J(w[],b)
+
+gradient descent :
+	repeat{
+		wj=wj-alpha*d/dwj(J(w[],b))
+		b=b-alpha*d/db(J(w[],b))
+		}
+
+
+	after derv:
+		repeat{
+			w1=w1-alpha*d/dw(J(w,b))
+				d/dw(J(w,b))-> 1/m*sum from 1 to m (Fw[],b(xith-yith)*xith
+			w2=w2-alpha*d/dw(J(w,b))
+				d/dw(J(w[],b))-> 1/m*sum from 1 to m (Fw[],b(xith-yith)*xith
+
+			......
+			wn=wn-alpha*d/dw(J(w,b))
+				d/dw(J(w[],b))-> 1/m*sum from 1 to m (Fw[],b(xith-yith)*xith
+
+			b=b-alpha*d/db(J(w,b))
+				d/db(J(w,b))-> 1/m*sum from 1 to m (Fw,b(xith-yith)
+			}
+
+
+Alternative way with Normal equation:
+	this for only linear regression
+	solve without iterations
+
+cons :
+	does not generlaize to other learning algorthims
+	slow when no of features >10,000
+gradient descent much recommended
+
+how to validate gradient descent :
+
+	ploting cost function to iterations (Learning curve):
+		cost function should decrease 
+		else even after 1 step means that alpha maybe too large
+
+to decide if my moedl already done:
+	Automatic convergence test:
+	if cost function less than 0.001 'epsilon'
+	
+how to choose learning rate:
+		!!DEBUG TIP!!:: to detrmine the small enough alpha .cost function should 		
+							decrease on every iteration...if ur model not working
+							choose a very very small learning rate if cost function 
+							incresed that means code has some bugs.
+								
+	

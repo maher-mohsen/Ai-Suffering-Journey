@@ -1,0 +1,13 @@
+what is overfitting : Fits the training data extremely well error zero in train example
+							can t predict well new sample (high variance)
+what is generalization (just right): fits training set pretty well and can predict any new sample	
+what is underfitting : 	does not fit the training set well (high bias)
+
+if we have too much features  the model maybe overfit and if we have too few features the model maybe 
+	underfit
+
+Adressing overfitting :
+	1- collect more training examples if you can
+	2- dimensionality reduction : feature selection to reduce polynomial function terms and select most
+		relative features
+	3- regularization :is to pervents features from having large effects

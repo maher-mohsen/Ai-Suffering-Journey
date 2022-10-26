@@ -1,0 +1,20 @@
+the squared error cost would not help :
+	because the fun is non convex and there is a lot of local minima
+Loss L(Fw[],b(x[]ith),yith)= -log(Fw[],b(x[]ith)when yith =1
+												-log(1-Fw[],b(x[])ith) when yith=0
+
+If F,w[],b(x[])ith->1 so loss -> 0  
+If F,w[],b(x[])ith->0 so loss -> inf  
+the loss is lower when y^ close to yith
+on -log(1-f)
+If F,w[],b(x[])ith->0 so loss -> 0  
+If F,w[],b(x[])ith->1 so loss -> inf 
+the further prediction F is from targe yith ,the higher the loss
+J(w[[),b
+=1/m*sum from 1 to m (L(Fw[]),b(x[])ith,yith)
+
+Simplifeid Cost function 
+	L(F)=-yithlog(F)-(1-yith)log(1-f)
+	J(w[[),b=-1/m* *sum from 1 to m (yithlog(F)+(1-yith)log(1-f))
+
+Cost function derived from stat princeple from maximum likelihood

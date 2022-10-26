@@ -1,0 +1,41 @@
+Gradient descent :
+					function used in general to minimize any function
+Outline to minimize J:
+	start with some w,b (set w=0,b=0)
+	keep changing w,b to reduce (w,b)
+	until settle at or near a minimum 
+
+how gradient decsent works :
+	imagine u are standing above hill and u want to go down to bottom valley
+	u will look around to find ur next stepdown and then you find the best choice		
+	and best step then move ...repeat procees until u reach bottom
+	which done in gradient decsent ...u statring to detrmine what is you next point 
+	to reach local minima point and at every time you change your start pos may lead
+	you to a diff local minima point 
+
+implempent:
+	repeat gneral eqs until convergence :
+					1 - w=w-alpha*(d/dw(J(w,b)))
+					2 - b=b-alpha*(d/db(J(w,b)))
+					update Simultaneously w and b
+
+	alpha        -> Learning rate (how the step is huge)
+	d/dw         -> Derivative of function J
+	convergence  -> repeat until finding local minima point
+
+	correct Simultaneous udpate:
+		tmp_w=w-alpha*(d/dw(J(w,b)))
+		tmp_b=b-alpha*(d/db(J(w,b)))
+		w=tmp_w b=tmp_b
+		 (dont change the parameter before store all paramentes new values with same
+			old values)
+Learning rate (alpha):
+	if alpha is too small -> takes very tiny steps but it will work
+	if alpha is too large -> may overshoot ,never reach minimum
+									(Fail  to converge,diverge)
+
+the stop condtion when : d/d(w or b) =0
+
+!! Gradient sescent takes a smaller  steps when u get near a  local minimum
+
+	  

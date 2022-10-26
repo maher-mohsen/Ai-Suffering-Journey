@@ -1,0 +1,23 @@
+to min cost function :
+	we choose the features we want to cancel or decrease their
+	effect and then penalize them
+Lambda : regularization parameter 
+	adding scale by adding lampda/2m* sum from 1 to n (w^2)
+	we can also penalize b
+
+gradient descent for linear regerssion:
+	repeat{
+
+	wj=wj-alpha*1/m*sum from 1 to m ((F-yith)*xith)+((lampda/m)*wj)
+	b=b-alpha*1/m*sum from 1 to m (F-yith)
+	}
+
+
+
+gradient descent for Logistic regerssion:
+	repeat{
+	--with diff define for Fw,b
+	wj=wj-alpha*1/m*sum from 1 to m ((F-yith)*xith)+((lampda/m)*wj)
+	b=b-alpha*1/m*sum from 1 to m (F-yith)
+	}
+

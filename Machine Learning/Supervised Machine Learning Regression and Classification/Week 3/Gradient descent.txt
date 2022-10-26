@@ -1,0 +1,21 @@
+J(w[]),b=-1/m* *sum from 1 to m (yithlog(F)+(1-yith)log(1-f))
+
+repeat{
+
+	wj=wj-alpha*d/dw*J(w[],b)
+	b=b-alpha*d/db*J(w[],b)
+
+	}
+
+repeat{
+
+	wj=wj-alpha*1/m*sum from 1 to m (F-yith)*xith
+	b=b-alpha*1/m*sum from 1 to m (F-yith)
+
+	}
+Looks like linear regression !! :: Dont forget the Fw[],b(x[])
+is diff
+Same concepts :
+	monitor 
+	vectorized
+	feature scaling

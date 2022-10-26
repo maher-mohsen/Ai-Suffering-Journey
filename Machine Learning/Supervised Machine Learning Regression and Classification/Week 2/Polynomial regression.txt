@@ -1,0 +1,2 @@
+you can fit curves to data
+but then featrue scalling becomes more important

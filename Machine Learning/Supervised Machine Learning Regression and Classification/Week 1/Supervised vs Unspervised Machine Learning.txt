@@ -1,0 +1,35 @@
+Learning Algos :
+	
+ -Supervised learning 
+ -Unsupervised learning
+ -Recommender systems
+ -Reinforcement learning
+
+
+
+--------------------------------------------------------
+Supervised Learning :you give the algo an examples forms.....( if x --> y )
+real world examples :
+	1-email            ----> spam?(0,1)              | spam filtreing
+	2-audio            ----> text transcripts        | speech recoginition
+	3-English          ----> Spanish                 | machine translation
+	4-ad,user info     ----> click?(0,1)             | online advertising
+	5-image,radar info ----> position of others cars | self-driving car
+	6-image of phone   ----> defect?(0,1)            | visual inspection
+
+Regression : Predict a number infinitely many possible outputs (predict a price of house depending on house area)
+
+Classification : predict categories ex : (Face mask detector {worked on before using tensorflow}) ,Breast canser detection)
+
+!!! You can use two or more inputs instead of one input ex :
+		in Breast cancer predection you can use tumor size and also a patient age
+
+Supervised Learning : maps inputs x to oututs y and learns from " right answer ",divided into 2 types regression and calssification
+------------------------------------------------------
+
+Unsupervies learning : find something intersting in unlabeled data finding patterns (we dont map inputs to outputs).
+
+   Clustering : divide unlabeled data into some simillars sets named cluster.
+			ex: Google news, DNA microarray 
+   Anomaly detection : find unsual data points.
+   Dimensionality reduction : compress data using fewer numbers
